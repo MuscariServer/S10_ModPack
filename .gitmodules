@@ -1,0 +1,15 @@
+[submodule "resources"]
+	path = resources
+	url = git@github.com:MuscariServer/S10_resources.git
+[submodule "scripts"]
+	path = scripts
+	url = git@github.com:MuscariServer/S10_scripts.git
+[submodule "config"]
+	path = config
+	url = git@github.com:MuscariServer/S10_configs.git
+[submodule "mods"]
+	path = mods
+	url = git@github.com:MuscariServer/S10_mods.git
+[submodule "customnpcs"]
+	path = customnpcs
+	url = git@github.com:MuscariServer/S10_customnpcs.git
