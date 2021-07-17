@@ -1,0 +1,23 @@
+name: ModPack creator
+on:
+  push:
+    tags:
+      - 'v*'
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    env:
+      mix_configs: 
+        sub
+      projects:
+        config
+        customnpcs
+        resources
+        scripts
+    steps:
+      - uses: actions/checkout@v1
+      - name: remove files
+        run: |
+          rm ./README.md
+          rm ./${{ env.projects }}/README.md
+          mkdir ./builder_pack
